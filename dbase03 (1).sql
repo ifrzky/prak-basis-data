@@ -1,0 +1,69 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Sep 15, 2022 at 05:33 AM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 7.3.29
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `dbase03`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblnilai`
+--
+
+CREATE TABLE `tblnilai` (
+  `NIM` varchar(15) DEFAULT NULL,
+  `Nama` varchar(10) DEFAULT NULL,
+  `matkul` varchar(20) DEFAULT NULL,
+  `nilai` int(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tblnilai`
+--
+
+INSERT INTO `tblnilai` (`NIM`, `Nama`, `matkul`, `nilai`) VALUES
+('0911500101', 'ADI', 'ALGORITMA', 90),
+('0911500101', 'ADI', 'KALKULUS', 65),
+('0911500101', 'ADI', 'PBO', 90),
+('0911500101', 'ADI', 'PEMROGRAMAN WEB', 90),
+('0911500101', 'ADI', 'PTI', 75),
+('0911500102', 'IDA', 'ALGORITMA', 80),
+('0911500102', 'IDA', 'PBO', 80),
+('0911500102', 'IDA', 'PEMROGRAMAN WEB', 85),
+('0911500102', 'IDA', 'PTI', 90),
+('0911500103', 'EDI', 'ALGORITMA', 85),
+('0911500103', 'EDI', 'KALKULUS', 60),
+('0911500103', 'EDI', 'PBO', 85),
+('0911500103', 'EDI', 'PEMROGRAMAN WEB', 85),
+('0911500103', 'EDI', 'PTI', 88),
+('0911500104', 'INA', 'ALGORITMA', 75),
+('0911500104', 'INA', 'PBO', 75),
+('0911500104', 'INA', 'PEMROGRAMAN WEB', 80),
+('0911500104', 'INA', 'PTI', 72),
+('0911500105', 'ANI', 'ALGORITMA', 92),
+('0911500105', 'ANI', 'KALKULUS', 68),
+('0911500105', 'ANI', 'PBO', 80),
+('0911500105', 'ANI', 'PEMROGRAMAN WEB', 92),
+('0911500105', 'ANI', 'PTI', 90);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
